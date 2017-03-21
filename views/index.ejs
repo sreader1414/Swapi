@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+
+<head>
+    <title>Backend Test</title>
+</head>
+
+<body>
+
+<h1><%= name %></h1>
+
+<div class="red"># node-exercise</div>
+<p>
+A little exercise using a Star Wars API <a href = "https://swapi.co/" target="_blank">https://swapi.co/</a>
+</p>
+
+<div class="red">## Goal</div>
+<p>
+Make a small express server with endpoints centered around Star Wars.
+This will hopefully demonstrate to us abilities to make an express app, consume data from an API, and manipulate that data into some desired way
+</p>
+
+<div class="red">## Requirements</div>
+<ul>
+    <li>Make an express server with at least the endpoints listed below</li>
+    <li>Use the API at <a href = "https://swapi.co/" target="_blank">https://swapi.co/</a> to get your Star Wars Data</li>
+    <li>When making paginated calls, limit the response to 10, so you can actually demonstrate using pagination to get all of the data</li>
+</ul>
+
+<div class="red">## Endpoints</div>
+<ul>
+    <li>'/character/:name' - Returns an EJS view (nothing too fancy) with data about the given character. (Needs to work with at least 'luke', 'han', 'leia', and 'rey')</li>
+    <ul>
+        <li><a href = "http://localhost:3000/character/luke" target="_blank">Luke<br></a></li>
+        <li><a href = "http://localhost:3000/character/han" target="_blank">Han<br></a></li>
+        <li><a href = "http://localhost:3000/character/leia" target="_blank">Leia<br></a></li>
+        <li><a href = "http://localhost:3000/character/rey" target="_blank">Rey<br></a></li>
+    </ul>
+    <li><a href = "http://localhost:3000/characters" target="_blank">'/characters'</a> - Returns raw JSON of 50 characters (doesn't matter which 50). This endpoint should be able to take a query parameter in the URL called 'sort' and the potential sort parameters will be 1 of the following, ['name', 'mass', 'height']  So the endpoint '/characters?sort=height' should return JSON of 50 characters sorted by their height.</li>
+    <li><a href = "http://localhost:3000/planetresidents" target="_blank">'/planetresidents'</a> - Return raw JSON in the form {planetName1: [characterName1, characterName2], planetName2: [characterName3]}.<br>So it is an object where the keys are the planet names, and the values are lists of residents names for that planet</li>
+</ul>
+
+</body>
+
+</html>

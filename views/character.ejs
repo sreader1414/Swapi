@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Star Wars Character: <%= name %></title>
+</head>
+
+<body>
+<h1>Menu</h1>
+
+<p>Characters</p>
+<ul>
+    <li><a href = "http://localhost:3000/character/luke">Luke<br></a></li>
+    <li><a href = "http://localhost:3000/character/han">Han<br></a></li>
+    <li><a href = "http://localhost:3000/character/leia">Leia<br></a></li>
+    <li><a href = "http://localhost:3000/character/rey">Rey<br></a></li>
+</ul>
+
+<p>Endpoints</p>
+
+<ul>
+    <li><a href = "http://localhost:3000/characters" target="_blank">'/characters'</a></li>
+    <li><a href = "http://localhost:3000/planetresidents" target="_blank">'/planetresidents'</a></li>
+</ul>
+
+<h1><%= name %></h1>
+<ul>
+    <li>
+        <span><b>Height:</b></span>
+        <span><%= height %></span>
+    </li>
+    <li>
+        <span><b>Mass:</b></span>
+        <span><%= mass %></span>
+    </li>
+    <li>
+        <span><b>Hair Color:</b></span>
+        <span><%= hair_color %></span>
+    </li>
+    <li>
+        <span><b>Skin Color:</b></span>
+        <span><%= skin_color %></span>
+    </li>
+    <li>
+        <span><b>Eye Color:</b></span>
+        <span><%= eye_color %></span>
+    </li>
+    <li>
+        <span><b>Birth Year:</b></span>
+        <span><%= birth_year %></span>
+    </li>
+    <li>
+        <span><b>Gender:</b></span>
+        <span><%= gender %></span>
+    </li>
+</ul>
+
+</body>
+
+</html>
